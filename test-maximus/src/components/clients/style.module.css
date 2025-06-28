@@ -1,0 +1,147 @@
+.clients {
+  padding: 4.7rem 2.7rem;
+
+  & .form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2.6rem;
+    border: 0.1rem solid #171a1f;
+    border-radius: 1rem;
+    padding: 2.4rem 2.1rem;
+    max-width: 102rem;
+    align-items: center;
+
+    & > input {
+      border: 0.1rem solid #171a1f;
+      padding: 1.1rem 1.4rem;
+      font-size: 1.6rem;
+      color: #171a1f;
+      background-color: transparent;
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 30rem;
+    }
+
+    & > button {
+      padding: 1.1rem 6rem;
+      border-radius: 1rem;
+      background-color: #171a1f;
+      color: #d9d9d9;
+      font-size: 1.8rem;
+      cursor: pointer;
+      width: 100%;
+      max-width: 30rem;
+      transition: 0.3s ease-in-out;
+      border: 0.1rem solid #d9d9d9;
+
+      &:hover {
+        background-color: transparent;
+        color: #171a1f;
+        border: 0.1rem solid #171a1f;
+      }
+    }
+  }
+
+  & .head {
+    display: flex;
+    gap: 1rem;
+
+    border-bottom: 0.1rem solid #171a1f;
+    padding-bottom: 1.6rem;
+
+    @media (width <= 1260px) {
+      overflow: scroll;
+    }
+
+    & > p {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #171a1fcc;
+      width: 100%;
+      max-width: 15rem;
+
+      &:last-of-type {
+        margin-left: auto;
+      }
+
+      &:nth-child(4) {
+        min-width: 20rem;
+      }
+    }
+  }
+
+  & .list {
+    border: 0.1rem solid #171a1f;
+    margin-top: 4.1rem;
+    padding: 2.4rem;
+    border-radius: 1rem;
+    max-width: 102rem;
+
+    & .listing {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & .client {
+      display: flex;
+      gap: 1rem;
+      border-bottom: 0.1rem solid #171a1f;
+      margin-bottom: 2rem;
+      padding-bottom: 0.3rem;
+      padding: 1.3rem 0.4rem;
+      align-items: center;
+
+      @media (width <= 1260px) {
+        overflow: scroll;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      & > p {
+        font-size: 1.6rem;
+        color: #171a1f;
+        font-weight: 400;
+        width: 100%;
+        max-width: 15rem;
+        min-width: 12rem;
+
+        &:nth-child(4) {
+          min-width: 20rem;
+        }
+      }
+    }
+  }
+
+  & .action {
+    display: flex;
+    gap: 1.3rem;
+    margin-left: auto;
+
+    & > button {
+      padding: 1rem 1.3rem;
+      border-radius: 1rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:first-of-type {
+        border: 0.1rem solid #171a1f;
+        background-color: transparent;
+      }
+
+      &:last-of-type {
+        border: 0.1rem solid #ff0000;
+        background-color: #ff0000;
+        color: #d9d9d9;
+      }
+    }
+  }
+
+  & .editing {
+    background-color: #f0f8ff;
+  }
+}

@@ -1,0 +1,126 @@
+.container {
+  background-color: #16191e;
+  min-width: 72rem;
+  border-radius: 3rem;
+  padding: 2.9rem;
+  overflow: hidden;
+
+  @media (width <= 1024px) {
+    min-width: 90%;
+  }
+
+  & > figure {
+    width: 100%;
+    margin-bottom: 3.5rem;
+    & > img {
+      margin: 0 auto;
+    }
+  }
+
+  & > form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    & > label {
+      width: 100%;
+      position: relative;
+      background-color: #f9f9f9;
+      border-radius: 3rem;
+
+      & > span {
+        position: absolute;
+        top: 100%;
+        left: 1rem;
+        color: red;
+        font-size: 1.6rem;
+        font-weight: 100;
+        padding-top: 0.3rem;
+      }
+
+      &[for='email'] {
+        &::before {
+          content: url('data:image/svg+xml,<svg width="24" height="20" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.6667 12H18.6667L16.3333 15.5H11.6667L9.33333 12H2.33333M25.6667 12V19C25.6667 19.6188 25.4208 20.2123 24.9832 20.6499C24.5457 21.0875 23.9522 21.3333 23.3333 21.3333H4.66666C4.04782 21.3333 3.45433 21.0875 3.01675 20.6499C2.57916 20.2123 2.33333 19.6188 2.33333 19V12M25.6667 12L21.6417 3.96163C21.4485 3.57288 21.1507 3.24573 20.7818 3.01695C20.4129 2.78818 19.9874 2.66686 19.5533 2.66663H8.44666C8.01256 2.66686 7.58714 2.78818 7.21821 3.01695C6.84929 3.24573 6.5515 3.57288 6.35833 3.96163L2.33333 12" stroke="%2316191E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+          position: absolute;
+          left: 1.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &[for='password'] {
+        &::before {
+          content: url('data:image/svg+xml,<svg width="22" height="24" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.16667 12.8334V8.16671C7.16667 6.61961 7.78125 5.13588 8.87521 4.04192C9.96917 2.94796 11.4529 2.33337 13 2.33337C14.5471 2.33337 16.0308 2.94796 17.1248 4.04192C18.2188 5.13588 18.8333 6.61961 18.8333 8.16671V12.8334M4.83333 12.8334H21.1667C22.4553 12.8334 23.5 13.878 23.5 15.1667V23.3334C23.5 24.622 22.4553 25.6667 21.1667 25.6667H4.83333C3.54467 25.6667 2.5 24.622 2.5 23.3334V15.1667C2.5 13.878 3.54467 12.8334 4.83333 12.8334Z" stroke="%2316191E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+          position: absolute;
+          left: 1.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      & > input {
+        font-size: 1.6rem;
+        color: #16191e;
+
+        padding: 1.4rem 0 1.4rem 6rem;
+        width: 100%;
+      }
+    }
+
+    & > button {
+      font-size: 1.8rem;
+      color: #16191e;
+      background-color: #f9f9f9;
+      padding: 1.2rem 6.1rem;
+      width: max-content;
+      margin: 0 auto;
+      border-radius: 3rem;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      text-transform: uppercase;
+      border: 0.1rem solid #16191e;
+
+      &:hover {
+        background-color: #16191e;
+        color: #f9f9f9;
+        border: 0.1rem solid #f9f9f9;
+      }
+    }
+  }
+
+  & .retry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    & > h3 {
+      font-size: 2rem;
+      color: #f9f9f9;
+      font-weight: 400;
+      max-width: 40rem;
+      line-height: 140%;
+      text-align: center;
+    }
+
+    & > button {
+      font-size: 1.6rem;
+      color: #16191e;
+      background-color: #f9f9f9;
+      padding: 1.2rem 6.1rem;
+      width: max-content;
+      margin: 0 auto;
+      border-radius: 3rem;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      text-transform: uppercase;
+      border: 0.1rem solid #16191e;
+
+      &:hover {
+        background-color: #16191e;
+        color: #f9f9f9;
+        border: 0.1rem solid #f9f9f9;
+      }
+    }
+  }
+}

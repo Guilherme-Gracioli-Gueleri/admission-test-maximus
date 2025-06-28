@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #171a1f;
+  width: 25rem;
+  height: 100vh;
+
+  padding: 6.5rem;
+  -webkit-box-shadow: 28px 24px 66px -24px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 28px 24px 66px -24px rgba(66, 68, 90, 1);
+  box-shadow: 28px 24px 66px -24px rgba(66, 68, 90, 1);
+
+  @media (width <= 1260px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  & > figure {
+    width: 100%;
+    margin-bottom: 3.5rem;
+
+    @media (width <= 1260px) {
+      display: none;
+    }
+    & img {
+      margin: 0 auto;
+      max-width: 9rem;
+    }
+  }
+
+  & > nav {
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+
+      @media (width <= 1260px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+    }
+
+    & li {
+      & a {
+        font-size: 2rem;
+        color: #d9d9d9;
+        text-align: center;
+        padding: 1rem 5rem;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+
+        @media (width <= 1260px) {
+          font-size: 1.4rem;
+          padding: 1rem 2rem;
+        }
+
+        &:hover {
+          background-color: #d9d9d92e;
+        }
+
+        &[data-active] {
+          background-color: #d9d9d9;
+          color: #171a1f;
+        }
+      }
+    }
+  }
+}
