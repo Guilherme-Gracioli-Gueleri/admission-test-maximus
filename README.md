@@ -13,7 +13,7 @@ Este projeto é uma aplicação React para o gerenciamento de **clientes**, **pr
 - Cadastro de produtos com nome, preço, estoque e categoria
 - Edição e remoção de produtos existentes
 
-### ✅ Pedidos (Orders)
+### ✅ Pedidos
 - Cadastro de pedidos com cliente, data, valor e status
 - Opções de status: Pendente, Processando, Concluído, Cancelado
 - Edição e exclusão de pedidos
